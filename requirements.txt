@@ -9,3 +9,4 @@ pillow
 requests
 streamlit-lottie
 streamlit_option_menu
+statsmodels
