@@ -50,7 +50,7 @@ with head:
         st.write(" ")
         st.write(" ")
 
-        str_path = "C:\\Users\HP\\Documents\\Supply Sage\\Images\\logo.PNG"
+        str_path = "logo.PNG"
         img = pl.open(str_path)
         st.image(img, width=300)
 
