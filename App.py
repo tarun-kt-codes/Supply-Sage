@@ -128,7 +128,6 @@ if sel=='Upload Data':
     if uploaded_file1 is not None:
         df1 = pd.read_csv(uploaded_file1)
         st.session_state.df1 = df1
-    ax1 = st.checkbox("Show sample Customer dataset",key="1")
 
 
     st.markdown("""#### *2. Product Dataset*""")
