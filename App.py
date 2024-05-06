@@ -1,5 +1,4 @@
 import time
-import os
 import math
 import requests
 import streamlit as st
@@ -50,15 +49,8 @@ styled_text = """
 with head:
         st.write(" ")
         st.write(" ")
+        st.markdown("# Supply Sage")
 
-        # Get the current directory of the script
-        current_dir = os.path.dirname(__file__)
-        
-        # Construct the file path dynamically
-        image_filename = "logo.PNG"
-        image_path = os.path.join(current_dir, image_filename)
-        img = pl.open(image_path)
-        st.image(img, width=300)
 
 with anim:
     st_lottie(lottie_stat,key='stat', width=300, height=300)
