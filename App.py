@@ -57,7 +57,7 @@ with head:
         # Construct the file path dynamically
         image_filename = "logo.PNG"
         image_path = os.path.join(current_dir, image_filename)
-
+        img = pl.open(image_path)
         st.image(img, width=300)
 
 with anim:
