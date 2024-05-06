@@ -129,10 +129,7 @@ if sel=='Upload Data':
         df1 = pd.read_csv(uploaded_file1)
         st.session_state.df1 = df1
     ax1 = st.checkbox("Show sample Customer dataset",key="1")
-    if ax1:
-        str_path = "C:\\Users\HP\\Documents\\Supply Sage\\Images\\cust.PNG"
-        img = pl.open(str_path)
-        st.image(img, width=350)
+
 
     st.markdown("""#### *2. Product Dataset*""")
     ax12 = st.checkbox("Show Description",key="12")
@@ -147,11 +144,7 @@ if sel=='Upload Data':
     if uploaded_file2 is not None:
         df2 = pd.read_csv(uploaded_file2)
         st.session_state.df2 = df2  
-    ax2 = st.checkbox("Show sample Product dataset",key="2")
-    if ax2:
-        str_path = "C:\\Users\HP\\Documents\\Supply Sage\\Images\\prod.PNG"
-        img = pl.open(str_path)
-        st.image(img, width=350)
+
 
     st.markdown("""#### *3. Target of Orders Dataset*""")
     ax13 = st.checkbox("Show Description",key="13")
@@ -168,11 +161,7 @@ if sel=='Upload Data':
     if uploaded_file3 is not None:
         df3 = pd.read_csv(uploaded_file3)
         st.session_state.df3 = df3  
-    ax3 = st.checkbox("Show sample Target of Order dataset",key="3")
-    if ax3:
-        str_path = "C:\\Users\HP\\Documents\\Supply Sage\\Images\\targ.PNG"
-        img = pl.open(str_path)
-        st.image(img, width=350)
+
 
     st.markdown("""#### *4. Order Dataset*""")
     ax14 = st.checkbox("Show Description",key="14")
@@ -196,11 +185,7 @@ if sel=='Upload Data':
     if uploaded_file4 is not None:
         df4 = pd.read_csv(uploaded_file4)
         st.session_state.df4 = df4  
-    ax4 = st.checkbox("Show sample Order dataset",key="4")
-    if ax4:
-        str_path = "C:\\Users\HP\\Documents\\Supply Sage\\Images\\ord.PNG"
-        img = pl.open(str_path)
-        st.image(img, width=1000)
+
 
 
 if sel=="Supply Chain Analysis":
