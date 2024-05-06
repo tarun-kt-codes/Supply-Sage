@@ -1,4 +1,5 @@
 import time
+import os
 import math
 import requests
 import streamlit as st
@@ -50,8 +51,13 @@ with head:
         st.write(" ")
         st.write(" ")
 
-        str_path = "logo.PNG"
-        img = pl.open(str_path)
+        # Get the current directory of the script
+        current_dir = os.path.dirname(__file__)
+        
+        # Construct the file path dynamically
+        image_filename = "logo.PNG"
+        image_path = os.path.join(current_dir, image_filename)
+
         st.image(img, width=300)
 
 with anim:
